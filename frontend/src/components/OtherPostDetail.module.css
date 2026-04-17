@@ -1,0 +1,346 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.otherContainer {
+  width: 100%;
+  background-color: #EEE;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.illustContainer {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  justify-self: stretch;
+  align-self: start;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.55);
+  position: relative;
+}
+
+.illust {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.illustArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustArrow:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.illustDots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.illustDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0;
+}
+
+.illustDotActive {
+  background: #ffffff;
+}
+
+.infoContainer {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.otherInfoContainer,
+.illustInfoContainer,
+.linkInfoContainer,
+.commentPlaceholder {
+  background-color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.dateContainer p,
+.viewContainer p,
+.commentInfoRow p {
+  margin: 0;
+}
+
+.otherInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nameContainer p {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0px;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.illustInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dateContainer p {
+  font-size: 15px;
+  color: #374151;
+}
+
+.viewContainer,
+.commentInfoRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #374151;
+}
+
+.viewContainer .text,
+.commentInfoRow .text {
+  font-weight: 700;
+}
+
+.viewIcon,
+.commentIcon {
+  width: 16px;
+}
+
+.likeContainer {
+  display: flex;
+}
+
+.likeButton {
+  width: 100px;
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.likeButtonIcon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.5px;
+}
+
+.liked {
+  fill: red;
+  stroke: red;
+}
+
+.linkInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkContainer,
+.shareContainer {
+  width: 100%;
+}
+
+.linkContainer a,
+.shareContainer a {
+  text-decoration: none;
+  display: flex;
+}
+
+.linkTextContainer,
+.shareTextContainer {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #2563eb;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.xIcon,
+.pIcon {
+  font-size: 20px;
+}
+
+.linkIcon {
+  width: 18px;
+}
+
+.shareButton {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.commentContainer {
+  max-width: 100%;
+}
+
+.commentPlaceholder {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.commentPlaceholder p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.emptyComment {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #6b7280 !important;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.commentItem {
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+}
+
+.commentMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.commentUser {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.commentDate {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.commentContent {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400 !important;
+  color: #374151;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.commentTextarea {
+  min-height: 120px;
+  resize: vertical;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.commentButton {
+  align-self: flex-start;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #111827;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .otherContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .nameContainer p {
+    font-size: 28px;
+  }
+}

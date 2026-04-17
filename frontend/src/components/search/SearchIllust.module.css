@@ -1,0 +1,25 @@
+.searchIllustList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.searchIllustButton {
+  padding: 0;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 999px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.searchIllustButton:hover {
+  transform: translateY(-1px);
+}
+
+.isSelected {
+  box-shadow: 0 0 0 4px rgba(78, 188, 231, 0.418);
+}

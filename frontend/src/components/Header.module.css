@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 8px;
+  height: 40px;
+}
+
+.title {
+  margin: 0;
+  flex-shrink: 0;
+  font-size: 25px;
+}
+
+.userArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.userNameRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.userName {
+  font-size: 12px;
+  font-weight: 700;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+
+.userNameSuffix {
+  font-weight: 500;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.authButtonRow {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.userActionButton {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modalSubmitButton,
+.modalSubButton {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: min(92vw, 420px);
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modalInput {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.displayNameRow {
+  display: flex;
+  gap: 8px;
+}
+
+.displayNameRow .modalInput {
+  flex: 1;
+}
+
+.modalError {
+  margin: 0;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 700;
+}

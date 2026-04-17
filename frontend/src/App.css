@@ -1,0 +1,21 @@
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text-main: #111827;
+  --text-sub: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+}
+
+button,
+select,
+.react-tabs__tab {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+button:focus,
+select:focus,
+.react-tabs__tab:focus {
+  outline: none;
+}

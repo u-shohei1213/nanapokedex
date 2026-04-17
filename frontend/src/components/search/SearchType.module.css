@@ -1,0 +1,25 @@
+.searchTypeList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.searchTypeButton {
+  padding: 0;
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 999px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.searchTypeButton:hover {
+  transform: translateY(-1px);
+}
+
+.isSelected {
+  box-shadow: 0 0 0 4px rgba(78, 188, 231, 0.418);
+}

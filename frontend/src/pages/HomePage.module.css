@@ -1,0 +1,32 @@
+.homePage {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.homePageContainer {
+  margin: 0 auto;
+  padding: 0 4px 40px;
+}
+
+.homPageTab {
+  padding-top: 0px;
+}
+
+.homePageTools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.homePageSort {
+  flex: 0 0 240px;
+  margin: 10px 0px -10px 0px;
+}
+
+@media (max-width: 640px) {
+  .homePageSort {
+    flex: 1 1 100%;
+  }
+}

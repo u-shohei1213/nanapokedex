@@ -1,0 +1,21 @@
+# ===== Python =====
+venv/
+__pycache__/
+*.pyc
+
+# ===== データ =====
+data/
+backend/data/
+backend/API設計.txt
+
+# ===== Frontend =====
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# ===== 個人メモ =====
+デプロイ手順.txt
+frontend/導入手順.txt
+
+# ===== その他 =====
+.env

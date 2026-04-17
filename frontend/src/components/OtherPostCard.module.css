@@ -1,0 +1,205 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-self: stretch;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+}
+
+.cardLink {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+}
+
+.cardLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardImageWrapper {
+  width: 180px;
+  height: 180px;
+  background-color: #f3f4f6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.cardImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.cardBody {
+  padding: 5px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin: 0px 0px 0px 3px;
+  line-height: 1.15;
+  word-break: break-word;
+}
+
+.cardStatusContainer {
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  margin-top: auto;
+}
+
+.cardStatus {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-weight: 700;
+  color: #4b5563;
+}
+
+.cardView {
+  left: 0px;
+}
+
+.cardLike {
+  left: 55px;
+}
+
+.cardComment {
+  left: 110px;
+}
+
+.cardIcon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.cardCount {
+  line-height: 1;
+  font-size: 13px;
+}
+
+.cardLikeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  padding: 5px 7px 5px 7px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.cardLikeButton:hover {
+  transform: translateY(-2px);
+}
+
+.cardLikeButtonIcon {
+  stroke-width: 1px;
+}
+
+.liked {
+  fill: red;
+  stroke: red;
+}
+
+.cardIllustSwitcher {
+  display: contents;
+}
+
+.cardIllustArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.cardIllustArrow:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  left: 6px;
+}
+
+.right {
+  right: 6px;
+}
+
+.cardIllustDots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  z-index: 2;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.cardIllustDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0;
+}
+
+.cardIllustDotActive {
+  background: #ffffff;
+}

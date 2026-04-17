@@ -1,0 +1,12 @@
+.postList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+  gap: 8px;
+  justify-content: center;
+}
+
+.postListEmpty {
+  margin: 0px;
+  color: #6b7280;
+  font-size: 14px;
+}

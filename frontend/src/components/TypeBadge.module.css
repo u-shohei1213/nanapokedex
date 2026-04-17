@@ -1,0 +1,10 @@
+.typeBadge {
+  display: inline-block;
+  padding: 2px 0px;
+  border-radius: 999px;
+  font-weight: 700;
+  background-color: #e5e7eb;
+  color: #111827;
+  color: #fff;
+  text-align: center;
+}

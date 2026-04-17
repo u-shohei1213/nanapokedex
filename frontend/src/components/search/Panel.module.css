@@ -1,0 +1,152 @@
+.searchPanel {
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.searchPanelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  padding: 0px;
+}
+
+.searchPanelTitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #111827;
+  padding: 20px;
+}
+
+.searchPanelToggleButton {
+  width: 120px;
+  height: 60px;
+  margin: 0px -30px 0px 0px;
+  border: 0px solid #d1d5db;
+  border-radius: 999px;
+  background-color: #AAA;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.searchPanelToggleIcon {
+  position: relative;
+  width: 18px;
+  height: 14px;
+  display: inline-block;
+}
+
+.searchPanelToggleLine {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #374151;
+  transition:
+    top 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.2s ease;
+  margin: 0px 0px 0px -20px;
+}
+
+.searchPanelToggleLine:nth-child(1) {
+  top: 0;
+}
+
+.searchPanelToggleLine:nth-child(2) {
+  top: 6px;
+}
+
+.searchPanelToggleLine:nth-child(3) {
+  top: 12px;
+}
+
+.isOpen .searchPanelToggleLine:nth-child(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+.isOpen .searchPanelToggleLine:nth-child(2) {
+  opacity: 0;
+}
+
+.isOpen .searchPanelToggleLine:nth-child(3) {
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+.searchPanelContent {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.isOpen {
+  grid-template-rows: 1fr;
+}
+
+.searchPanelBody {
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 0px 20px;
+}
+
+.searchPanelSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.searchPanelSectionTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4b5563;
+}
+
+.searchPanelFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchPanelResetButton {
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.searchPanelResetButton:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
