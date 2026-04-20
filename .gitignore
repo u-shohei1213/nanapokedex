@@ -1,5 +1,7 @@
 # ===== Python =====
 venv/
+.venv/
+env/
 __pycache__/
 *.pyc
 
@@ -13,9 +15,18 @@ frontend/node_modules/
 frontend/dist/
 frontend/.env
 
+# ===== Terraform =====
+*.tfstate
+*.tfstate.*
+*.tfvars
+**/.terraform/
+
 # ===== 個人メモ =====
 デプロイ手順.txt
 frontend/導入手順.txt
+backend/API設計.txt
+terraform/再構築手順.txt
 
 # ===== その他 =====
 .env
+deploy.zip

@@ -1,0 +1,81 @@
+# =========================
+# 基本設定
+# =========================
+
+aws_region   = "ap-northeast-1"
+project_name = "nanapokedex"
+
+# =========================
+# VPC
+# =========================
+
+vpc_id = "vpc-xxxxxxxxxxxxxxxxx"
+
+# =========================
+# RDS
+# =========================
+
+db_username = "postgres"
+db_password = "CHANGE_ME"
+db_host     = "your-db-endpoint.ap-northeast-1.rds.amazonaws.com"
+db_name     = "postgres"
+db_port     = "5432"
+db_user     = "postgres"
+db_admin_cidr = "xxx.xxx.xxx.xxx/xx"
+
+# =========================
+# Cookie / CORS
+# =========================
+
+cookie_samesite = "none"
+cookie_secure   = "true"
+
+backend_cors_origins = "[\"http://localhost:5173\"]"
+
+# =========================
+# Python（EB）
+# =========================
+
+pythonpath = "/var/app/venv/staging-XXXX/bin"
+
+# =========================
+# Elastic Beanstalk
+# =========================
+
+eb_app_name              = "nanapokedex"
+eb_env_name              = "Nanapokedex-env"
+eb_platform_arn          = "arn:aws:elasticbeanstalk:ap-northeast-1::platform/Python 3.14 running on 64bit Amazon Linux 2023/4.12.1"
+eb_tier_name             = "WebServer"
+
+eb_instance_type         = "t3.micro"
+eb_iam_instance_profile  = "aws-elasticbeanstalk-ec2-role"
+eb_service_role          = "arn:aws:iam::<ACCOUNT_ID>:role/service-role/aws-elasticbeanstalk-service-role"
+
+eb_instance_subnets = "subnet-xxxx,subnet-yyyy,subnet-zzzz"
+eb_elb_subnets      = "subnet-xxxx,subnet-yyyy,subnet-zzzz"
+eb_ssh_cidr   = ""
+
+# =========================
+# API Gateway
+# =========================
+
+apigw_api_name        = "nanapokedex-api"
+apigw_integration_uri = "http://your-eb-url.elasticbeanstalk.com/{proxy}"
+
+# =========================
+# Amplify
+# =========================
+
+amplify_app_name     = "nanapokedex"
+amplify_repository   = "https://github.com/your-user/your-repo"
+amplify_branch_name  = "main"
+
+api_base_url = "https://your-api-id.execute-api.ap-northeast-1.amazonaws.com"
+
+# =========================
+# IAM
+# =========================
+
+eb_ec2_role_name         = "aws-elasticbeanstalk-ec2-role"
+eb_instance_profile_name = "aws-elasticbeanstalk-ec2-role"
+eb_service_role_name     = "aws-elasticbeanstalk-service-role"
